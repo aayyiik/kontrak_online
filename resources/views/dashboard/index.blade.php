@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Connect Plus</title>
+    <title>SIBUCOT</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
@@ -21,11 +21,11 @@
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:{{asset('')}}partials/_navbar.html -->
+      <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="{{asset('assets/index.html')}}"><img src="{{asset('assets/images/logo.svg')}}" alt="logo" /></a>
-          <a class="navbar-brand brand-logo-mini" href="{{asset('assets/index.html')}}"><img src="{{asset('assets/images/logo-mini.svg')}}" alt="logo" /></a>
+          <a class="navbar-brand brand-logo" href="{{asset('assets/index.html')}}"><img src="{{asset('assets/images/logo/logo.png')}}" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="{{asset('assets/index.html')}}"><img src="{{asset('assets/images/logo/logo-mini.png')}}" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -314,7 +314,7 @@
                   <div>
                     <div class="d-flex align-items-center">
                       <div class="sidebar-profile-img">
-                        <img src="{{asset('')}}assets/images/faces/face28.png" alt="image">
+                        <img src="{{asset('assets/images/faces/face28.png')}}" alt="image">
                       </div>
                       <div class="sidebar-profile-text">
                         <p class="mb-1">Henry Klein</p>
