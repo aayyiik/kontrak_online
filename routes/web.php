@@ -24,3 +24,4 @@ Route::get('/dashboard', [DashboardController::class, 'index']);
 //form input ke template
 
 Route::get('/form', [TemplateController::class, 'index']);
+Route::get('/cetak',[TemplateController::class,'store']);
