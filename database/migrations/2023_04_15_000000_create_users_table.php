@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama');
             $table->unsignedBigInteger('id_role');
             $table->foreign('id_role')->references('id_role')->on('role');
-            $table->unsignedBigInteger('id_unit');
+            $table->unsignedBigInteger('id_unit')->nullable();
             $table->foreign('id_unit')->references('id_unit')->on('unit_kerja');
             $table->integer('status');
             $table->timestamp('email_verified_at')->nullable();
