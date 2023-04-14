@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <a href="{{ route('create') }}" class="btn btn-success btn-sm mb-2">Create Post</a>
+            <a href="/form_ttd" class="btn btn-success btn-sm mb-2">Create Post</a>
             <table class="table">
                 <thead>
                   <tr>
