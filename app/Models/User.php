@@ -17,10 +17,17 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+     protected $table = 'users';
+     protected $primaryKey = 'nik';
+    
     protected $fillable = [
-        'name',
-        'email',
+        'id_role',
+        'id_unit',
+        'nama',
+        'status',
         'password',
+        'remember_token'
     ];
 
     /**
@@ -41,4 +48,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function role(){
+        return $this->belongsTo(RoleModel::class, 'id_role');
+    }
+
+    public function unit_kerja(){
+        return $this->belongsTo(UnitKerjaModel::class, 'id_unit');
+    }
 }
