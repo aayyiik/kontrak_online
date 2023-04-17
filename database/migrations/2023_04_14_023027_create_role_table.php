@@ -12,9 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('role', function (Blueprint $table) {
-            $table->bigIncrements('id_role');
+            $table->char('id_role',4)->unique();
             $table->string('nama_role');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

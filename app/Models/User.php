@@ -22,9 +22,9 @@ class User extends Authenticatable
      protected $primaryKey = 'nik';
     
     protected $fillable = [
+        'nama',
         'id_role',
         'id_unit',
-        'nama',
         'status',
         'password',
         'remember_token'
