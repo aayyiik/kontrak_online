@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SignatureController;
 use App\Http\Controllers\TemplateController;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,6 @@ Route::get('/form_ttd',[SignatureController::class,'create']);
 //login
 Route::get('/login', [AuthController::class, 'login']);
 Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin');
+
+//Dashboard
+Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);

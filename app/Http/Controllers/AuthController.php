@@ -23,12 +23,22 @@ class AuthController extends Controller
 
             $user = Auth::user();
 
-            if($user->role == 'R001' ){
-                return redirect('/Dashboard_Buyer');
-            }elseif($user->role == 'R002'){
-                return redirect ('/Dashboard_Rekanan');
-            }elseif($user->role == 'R003'){
-                return redirect('/Dashboard_Dep.Hukum');
+            if($user->id_role == 'R008' ){
+                return redirect('/Dashboard_admin');
+            }elseif($user->id_role == 'R002'){
+                return redirect ('/Dashboard_rekanan');
+            }elseif($user->id_role == 'R003'){
+                return redirect('/Dashboard_hukum');
+            }elseif($user->id_role == 'R004'){
+                return redirect('/Dashboard_avp');
+            }elseif($user->id_role == 'R005'){
+                return redirect('/Dashboard_vp');
+            }elseif($user->id_role == 'R006'){
+                return redirect('Dashboard_svp');
+            }elseif($user->id_role == 'R007'){
+                return redirect('Dashboard_dku');
+            }elseif($user->id_role == 'R001'){
+                return redirect('Dashboard_buyer');
             }
 
             return redirect()->intended('/');
