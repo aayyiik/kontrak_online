@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\SignatureController;
 use App\Http\Controllers\TemplateController;
@@ -30,3 +31,6 @@ Route::get('/cetak',[TemplateController::class,'store']);
 //ttd ckeditor
 Route::get('/ttd',[SignatureController::class,'index']);
 Route::get('/form_ttd',[SignatureController::class,'create']);
+
+//login
+Route::get('/login', [AuthController::class, 'login']);
