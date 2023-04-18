@@ -34,3 +34,4 @@ Route::get('/form_ttd',[SignatureController::class,'create']);
 
 //login
 Route::get('/login', [AuthController::class, 'login']);
+Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin');

@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SI Kontrol</title>
+    <title>LOGIN - SI KONTROL</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{asset('assets/vendors/mdi/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/vendors/flag-icon-css/css/flag-icon.min.css')}}">
@@ -29,30 +29,44 @@
                 <div class="brand-logo">
                   <img src="{{asset('assets/images/logo-dark.svg')}}">
                 </div>
-                <h4>Hello! let's get started</h4>
-                <h6 class="font-weight-light">Sign in to continue.</h6>
-                <form class="pt-3">
+                {{-- Error Alert --}}
+                  @if(session('error'))
+                  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                      {{session('error')}}
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  @endif
+                <h4>Hello! Selamat Datang</h4>
+                <h6 class="font-weight-light">Sign in</h6>
+
+                
+                <form class="pt-3" action="/postlogin" method="POST">
+                  @csrf
+                @error('login_gagal')
+                {{-- <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span> --}}
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    {{-- <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span> --}}
+                    <span class="alert-inner--text"><strong>Warning!</strong> {{ $message }}</span>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @enderror
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                    <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" name="nik" placeholder="Username">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" name="password" placeholder="Password">
                   </div>
                   <div class="mt-3">
-                    <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="index.html">SIGN IN</a>
-                  </div>
+                    <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit">Login</button>                  </div>
                   <div class="my-2 d-flex justify-content-between align-items-center">
-                    <div class="form-check">
-                      <label class="form-check-label text-muted">
-                        <input type="checkbox" class="form-check-input"> Keep me signed in </label>
-                    </div>
                     <a href="#" class="auth-link text-black">Forgot password?</a>
                   </div>
-                  <div class="mb-2">
-                    <button type="button" class="btn btn-block btn-facebook auth-form-btn">
-                      <i class="mdi mdi-facebook mr-2"></i>Connect using facebook </button>
-                  </div>
-                  <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="register.html" class="text-primary">Create</a>
                   </div>
                 </form>
               </div>
