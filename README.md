@@ -1,5 +1,7 @@
 Project tugas akhir
 
-Nama : Ari Lathifatul Chusna
+Nama : 
+1. Ari Lathifatul Chusna
+2. Nadya Lovita Sari
 
 smart business contract (sibucot)
