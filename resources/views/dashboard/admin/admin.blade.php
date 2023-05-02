@@ -1,1 +1,5 @@
-<h1>Hallo Masuk</h1>
+@extends('templates.master')
+@section('content')
+    
+<h1>Dashboard Admin</h1>
+@endsection
