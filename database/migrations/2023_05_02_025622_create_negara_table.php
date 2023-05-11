@@ -12,8 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('negara', function (Blueprint $table) {
-            $table->id();
+            $table->char('id_negara',4);
+            $table->string('nama_negara');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
