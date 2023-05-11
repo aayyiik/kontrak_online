@@ -10,11 +10,15 @@
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
           <span class="icon-bg"><i class="mdi mdi-crosshairs-gps menu-icon"></i></span>
-          <span class="menu-title">UI Elements</span>
+          <span class="menu-title">Data Master</span>
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="/unitkerja">Unit Kerja</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/role">Role</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/">Form</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/">Form</a></li>
             <li class="nav-item"> <a class="nav-link" href="/form">Form</a></li>
             <li class="nav-item"> <a class="nav-link" href="/form_ttd">Tanda tangan</a></li>
             <li class="nav-item"> <a class="nav-link" href="">Typography</a></li>

@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SignatureController;
 use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\UnitKerjaController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -39,3 +41,9 @@ Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin')
 
 //Dashboard
 Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);
+
+//UnitKerja
+Route::get('/unitkerja',[UnitKerjaController::class, 'index']);
+
+//Role
+Route::get('role', [RoleController::class, 'index']);
