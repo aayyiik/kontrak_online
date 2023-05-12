@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BagianController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SignatureController;
+use App\Http\Controllers\StatusController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UnitKerjaController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -42,8 +45,17 @@ Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin')
 //Dashboard
 Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);
 
+//User
+Route::get('/user', [UserController::class, 'index']);
+
 //UnitKerja
 Route::get('/unitkerja',[UnitKerjaController::class, 'index']);
 
 //Role
-Route::get('role', [RoleController::class, 'index']);
+Route::get('/role', [RoleController::class, 'index']);
+
+//Bagian
+Route::get('/bagian', [BagianController::class, 'index']);
+
+//Status
+Route::get('/status', [StatusController::class, 'index']);
