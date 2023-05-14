@@ -11,8 +11,8 @@ class UserController extends Controller
 {
     public function index(){
         $user = User::all();
-        $unit_kerja = UnitKerja::all();
         $role = Role::all();
-        return view('dashboard.admin.user', ['user'=>$user], compact('unit_kerja', 'role'));
+        $unit = UnitKerja::all();
+        return view('dashboard.admin.user', ['user'=>$user], compact('role','unit'));
     }
 }
