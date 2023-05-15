@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\JenisPekerjaanController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SignatureController;
 use App\Http\Controllers\StatusController;
@@ -59,3 +60,6 @@ Route::get('/bagian', [BagianController::class, 'index']);
 
 //Status
 Route::get('/status', [StatusController::class, 'index']);
+
+//Jenis Pekerjaan
+Route::get('/jenispekerjaan',[JenisPekerjaanController::class, 'index']);

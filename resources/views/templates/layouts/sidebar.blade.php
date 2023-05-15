@@ -21,6 +21,7 @@
             <li class="nav-item"> <a class="nav-link" href="/rekanan">Rekanan</a></li>
             <li class="nav-item"> <a class="nav-link" href="/bagian">Bagian</a></li>
             <li class="nav-item"> <a class="nav-link" href="/status">Status</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/jenispekerjaan">Jenis Pekerjaan</a></li>
             <li class="nav-item"> <a class="nav-link" href="/negara">Negara</a></li>
             <li class="nav-item"> <a class="nav-link" href="/kota">Kota</a></li>
           </ul>
