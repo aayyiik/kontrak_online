@@ -15,4 +15,9 @@ class Kota extends Model
     protected $fillable = [
         'nama_kota'
     ];
+
+    public function negara(){
+        return $this->belongsTo(Negara::class, 'id_negara');
+    }
+
 }

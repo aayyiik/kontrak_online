@@ -15,4 +15,8 @@ class Negara extends Model
     protected $fillable = [
         'nama_negara'
     ];
+
+    public function kota(){
+        return $this->hasMany(Kota::class, 'id_kota');
+    }
 }

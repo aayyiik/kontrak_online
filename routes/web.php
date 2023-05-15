@@ -4,6 +4,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPekerjaanController;
+use App\Http\Controllers\KotaController;
+use App\Http\Controllers\NegaraController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SignatureController;
 use App\Http\Controllers\StatusController;
@@ -63,3 +65,9 @@ Route::get('/status', [StatusController::class, 'index']);
 
 //Jenis Pekerjaan
 Route::get('/jenispekerjaan',[JenisPekerjaanController::class, 'index']);
+
+//Kota
+Route::get('/kota', [KotaController::class, 'index']);
+
+//Negara
+Route::get('/negara', [NegaraController::class, 'index']);
