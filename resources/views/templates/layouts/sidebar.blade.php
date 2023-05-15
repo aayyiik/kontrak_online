@@ -15,25 +15,19 @@
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="/user">User</a></li>
             <li class="nav-item"> <a class="nav-link" href="/unitkerja">Unit Kerja</a></li>
             <li class="nav-item"> <a class="nav-link" href="/role">Role</a></li>
-            <li class="nav-item"> <a class="nav-link" href="/">Form</a></li>
-            <li class="nav-item"> <a class="nav-link" href="/">Form</a></li>
-            <li class="nav-item"> <a class="nav-link" href="/form">Form</a></li>
-            <li class="nav-item"> <a class="nav-link" href="/form_ttd">Tanda tangan</a></li>
-            <li class="nav-item"> <a class="nav-link" href="">Typography</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/rekanan">Rekanan</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/bagian">Bagian</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/status">Status</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/jenispekerjaan">Jenis Pekerjaan</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/negara">Negara</a></li>
+            <li class="nav-item"> <a class="nav-link" href="/kota">Kota</a></li>
           </ul>
         </div>
       </li>
 
-      <li class="nav-item documentation-link">
-        <a class="nav-link" href="http://www.bootstrapdash.com/demo/connect-plus-free/jquery/documentation/documentation.html" target="_blank">
-          <span class="icon-bg">
-            <i class="mdi mdi-file-document-box menu-icon"></i>
-          </span>
-          <span class="menu-title">Documentation</span>
-        </a>
-      </li>
       <li class="nav-item sidebar-user-actions">
         <div class="user-details">
           <div class="d-flex justify-content-between align-items-center">

@@ -53,7 +53,9 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class, 'id_role');
     }
 
-    public function unit_kerja(){
+    public function unit(){
         return $this->belongsTo(UnitKerja::class, 'id_unit');
     }
+
+   
 }
