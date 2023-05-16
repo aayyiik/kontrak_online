@@ -17,6 +17,10 @@ class Role extends Model
     ];
 
     public function user(){
+<<<<<<< HEAD
         return $this->hasaMany(User::class, 'nik');
+=======
+        return $this->hasMany(User::class, 'nik');
+>>>>>>> a537976108c998cbf417f0254c7ca4fca4473186
     }
 }
