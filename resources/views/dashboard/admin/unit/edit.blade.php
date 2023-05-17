@@ -8,7 +8,7 @@
         @csrf
         <div class="form-group">
           <label for="exampleInputText1">Nama Unit</label>
-          <input type="text" class="form-control" id="exampleInputText1" name="nama_bagian" value="{{ $unit->nama_unit }}">
+          <input type="text" class="form-control" id="exampleInputText1" name="nama_unit" value="{{ $unit->nama_unit }}">
         </div>
         <button type="submit" class="btn btn-primary mr-2">Submit</button>
         <button class="btn btn-light">Cancel</button>
