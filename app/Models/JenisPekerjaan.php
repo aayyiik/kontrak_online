@@ -11,6 +11,7 @@ class JenisPekerjaan extends Model
     
     protected $table = 'jenis_pekerjaan';
     protected $primaryKey = 'id_jepe';
+    public $incrementing = false;
 
     protected $fillable = [
         'jenis_pekerjaan'

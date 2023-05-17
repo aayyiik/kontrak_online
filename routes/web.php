@@ -71,6 +71,8 @@ Route::get('/status', [StatusController::class, 'index']);
 
 //Jenis Pekerjaan
 Route::get('/jenispekerjaan',[JenisPekerjaanController::class, 'index']);
+Route::get('/jenispekerjaan/{id_jepe}/edit', [JenisPekerjaanController::class, 'edit']);
+Route::post('/jenispekerjaan/{id_jepe}/update', [JenisPekerjaanController::class, 'update']);
 
 //Kota
 Route::get('/kota', [KotaController::class, 'index']);
