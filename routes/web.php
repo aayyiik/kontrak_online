@@ -59,6 +59,10 @@ Route::get('/role', [RoleController::class, 'index']);
 
 //Bagian
 Route::get('/bagian', [BagianController::class, 'index']);
+Route::get('/bagian/create', [BagianController::class, 'create']);
+Route::post('/bagian/store', [BagianController::class, 'store']);
+Route::get('/bagian/{id_bagian}/edit', [BagianController::class, 'edit']);
+Route::post('/bagian/{id_bagian}/update', [BagianController::class, 'update']);
 
 //Status
 Route::get('/status', [StatusController::class, 'index']);
