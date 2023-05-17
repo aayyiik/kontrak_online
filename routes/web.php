@@ -68,6 +68,8 @@ Route::post('/bagian/{id_bagian}/update', [BagianController::class, 'update']);
 
 //Status
 Route::get('/status', [StatusController::class, 'index']);
+Route::get('/status/{id_status}/edit', [StatusController::class, 'edit']);
+Route::post('/status/{id_status}/update', [StatusController::class, 'update']);
 
 //Jenis Pekerjaan
 Route::get('/jenispekerjaan',[JenisPekerjaanController::class, 'index']);
