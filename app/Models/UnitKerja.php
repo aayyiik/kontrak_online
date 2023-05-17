@@ -11,9 +11,10 @@ class UnitKerja extends Model
 
     protected $table = 'unit_kerja';
     protected $primaryKey = 'id_unit';
+    public $incrementing = false;
 
     protected $fillable = [
-        'nama_unit'
+        'id_unit','nama_unit'
     ];
 
     public function user(){

@@ -53,6 +53,8 @@ Route::get('/user', [UserController::class, 'index']);
 
 //UnitKerja
 Route::get('/unitkerja',[UnitKerjaController::class, 'index']);
+Route::get('/unit/{id_unit}/edit', [UnitKerjaController::class, 'edit']);
+Route::post('/unit/{id_unit}/update', [UnitKerjaController::class, 'update']);
 
 //Role
 Route::get('/role', [RoleController::class, 'index']);
