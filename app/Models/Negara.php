@@ -10,8 +10,9 @@ class Negara extends Model
     use HasFactory;
     
     protected $table = 'negara';
-    protected $primaryKey = 'id_negara';
-
+    protected $primaryKey = 'id';
+    // public $incrementing = false;
+    
     protected $fillable = [
         'nama_negara'
     ];

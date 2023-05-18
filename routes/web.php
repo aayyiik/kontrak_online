@@ -53,21 +53,35 @@ Route::get('/user', [UserController::class, 'index']);
 
 //UnitKerja
 Route::get('/unitkerja',[UnitKerjaController::class, 'index']);
+Route::get('/unit/{id_unit}/edit', [UnitKerjaController::class, 'edit']);
+Route::post('/unit/{id_unit}/update', [UnitKerjaController::class, 'update']);
 
 //Role
 Route::get('/role', [RoleController::class, 'index']);
 
 //Bagian
 Route::get('/bagian', [BagianController::class, 'index']);
+Route::get('/bagian/create', [BagianController::class, 'create']);
+Route::post('/bagian/store', [BagianController::class, 'store']);
+Route::get('/bagian/{id_bagian}/edit', [BagianController::class, 'edit']);
+Route::post('/bagian/{id_bagian}/update', [BagianController::class, 'update']);
 
 //Status
 Route::get('/status', [StatusController::class, 'index']);
+Route::get('/status/{id_status}/edit', [StatusController::class, 'edit']);
+Route::post('/status/{id_status}/update', [StatusController::class, 'update']);
 
 //Jenis Pekerjaan
 Route::get('/jenispekerjaan',[JenisPekerjaanController::class, 'index']);
+Route::get('/jenispekerjaan/{id_jepe}/edit', [JenisPekerjaanController::class, 'edit']);
+Route::post('/jenispekerjaan/{id_jepe}/update', [JenisPekerjaanController::class, 'update']);
 
 //Kota
 Route::get('/kota', [KotaController::class, 'index']);
+Route::get('/kota/{id_kota}/edit', [KotaController::class, 'edit']);
+Route::post('/kota/{id_kota}/update', [KotaController::class, 'update']);
 
 //Negara
 Route::get('/negara', [NegaraController::class, 'index']);
+Route::get('/negara/{id_negara}/edit', [NegaraController::class, 'edit']);
+Route::post('/negara/{id_negara}/update', [NegaraController::class, 'update']);

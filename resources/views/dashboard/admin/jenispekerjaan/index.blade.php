@@ -8,19 +8,19 @@
         <thead>
           <tr>
             <th>#</th>
-            <th>Nama Bagian</th>
+            <th>Jenis Pekerjaan</th>
             <th>Aksi</th>
           </tr>
         </thead>
         <tbody>
           <?php $no= 1; ?>
-          @foreach ($bagian as $item)
+          @foreach ($jepe as $item)
           <tr>
             <td>{{$no++}}</td>
-            <td>{{$item->nama_bagian}}</td>
+            <td>{{$item->jenis_pekerjaan}}</td>
             <td>
-              <a href="/edit" class="btn btn-warning">Edit</a>
-              <a href="/delete" class="btn btn-danger">Hapus</a>
+              <a href="/jenispekerjaan/{{$item->id_jepe}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/jenispekerjaan/{{$item->id_jepe}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>

@@ -10,7 +10,7 @@ class Status_Approve extends Model
     use HasFactory;
 
     protected $table = 'status';
-    protected $primaryKey = 'id_status';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
         'nama_status'

@@ -19,8 +19,8 @@
             <td>{{$no++}}</td>
             <td>{{$item->nama_unit}}</td>
             <td>
-              <a href="/edit" class="btn btn-warning">Edit</a>
-              <a href="/delete" class="btn btn-danger">Hapus</a>
+              <a href="/unit/{{$item->id_unit}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/unit/{{$item->id_unit}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>
