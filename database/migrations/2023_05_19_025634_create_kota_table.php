@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('kode_kota',3)->unique();
             $table->string('nama_kota');
-            $table->unsignedBigInteger('negara_id');
-            $table->foreign('id')->references('id')->on('negara');
+            $table->string('kode_negara');
+            $table->foreign('kode_negara')->references('kode_negara')->on('negara');
             $table->timestamps();
             $table->softDeletes();
         });

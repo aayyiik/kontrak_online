@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('negara', function (Blueprint $table) {
             $table->id();
-            $table->string('negara_id',2)->unique();
+            $table->string('kode_negara',2)->unique();
             $table->string('nama_negara');
             $table->timestamps();
             $table->softDeletes();

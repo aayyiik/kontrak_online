@@ -15,27 +15,27 @@ class UnitKerjaSeeder extends Seeder
     {
 
         UnitKerja::create([
-            'id_unit' => 'U001',
+            'kode_unit' => 'U001',
             'nama_unit' => 'Pengadaan Jasa'
         ]);
 
         UnitKerja::create([
-            'id_unit'=> 'U002',
+            'kode_unit'=> 'U002',
             'nama_unit' => 'PPBJ'
         ]);
 
         UnitKerja::create([
-            'id_unit' => 'U003',
+            'kode_unit' => 'U003',
                 'nama_unit' => 'Keuangan dan Sekretariat'
         ]);
 
         UnitKerja::create([
-            'id_unit' => 'U004',
+            'kode_unit' => 'U004',
             'nama_unit' => 'Hukum'
         ]);
 
         UnitKerja::create([
-            'id_unit' => 'U005',
+            'kode_unit' => 'U005',
                 'nama_unit' => 'Teknik'
         ]);
     }

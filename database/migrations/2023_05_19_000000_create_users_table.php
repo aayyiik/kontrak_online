@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nik',7)->unique();
             $table->string('nama');
-            $table->unsignedBigInteger('role_id');
-            $table->foreign('role_id')->references('id')->on('role');
-            $table->unsignedBigInteger('unit_id');
-            $table->foreign('unit_id')->references('id')->on('unit_kerja');
+            $table->string('kode_role');
+            $table->foreign('kode_role')->references('kode_role')->on('role');
+            $table->string('kode_unit')->nullable();
+            $table->foreign('kode_unit')->references('kode_unit')->on('unit_kerja');
             $table->integer('status');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
