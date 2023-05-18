@@ -10,8 +10,8 @@ class Kota extends Model
     use HasFactory;
     
     protected $table = 'kota';
-    protected $primaryKey = 'id_kota';
-    public $incrementing = false;
+    protected $primaryKey = 'id';
+    // public $incrementing = false;
     
     protected $fillable = [
         'nama_kota'

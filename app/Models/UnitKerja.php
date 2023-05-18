@@ -10,8 +10,8 @@ class UnitKerja extends Model
     use HasFactory;
 
     protected $table = 'unit_kerja';
-    protected $primaryKey = 'id_unit';
-    public $incrementing = false;
+    protected $primaryKey = 'id';
+    // public $incrementing = false;
 
     protected $fillable = [
         'id_unit','nama_unit'

@@ -10,8 +10,8 @@ class Bagian extends Model
     use HasFactory;
 
     protected $table = 'bagian';
-    protected $primaryKey = 'id_bagian';
-    public $incrementing = false;
+    protected $primaryKey = 'id';
+
 
     protected $fillable = [
         'id_bagian',

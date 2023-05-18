@@ -24,7 +24,7 @@
             <td>{{$item->nik}}</td>
             <td>{{$item->nama}}</td>
             <td>{{$item->role->nama_role}}</td>
-            <td>{{$item->unit->nama_unit ?? "Null"}}</td>
+            <td>{{$item->unit->nama_unit ?? "-"}}</td>
             <td><span class="label {{ ($item->status == 1) ? 'badge rounded-pill bg-primary text-white' : 'badge rounded-pill bg-warning text-white'}}">{{ ($item->status == 1)
               ? 'Aktif' : 'Non-Aktif' }}</span></td>
             <td>
