@@ -78,6 +78,10 @@ Route::post('/jenispekerjaan/{id_jepe}/update', [JenisPekerjaanController::class
 
 //Kota
 Route::get('/kota', [KotaController::class, 'index']);
+Route::get('/kota/{id_kota}/edit', [KotaController::class, 'edit']);
+Route::post('/kota/{id_kota}/update', [KotaController::class, 'update']);
 
 //Negara
 Route::get('/negara', [NegaraController::class, 'index']);
+Route::get('/negara/{id_negara}/edit', [NegaraController::class, 'edit']);
+Route::post('/negara/{id_negara}/update', [NegaraController::class, 'update']);

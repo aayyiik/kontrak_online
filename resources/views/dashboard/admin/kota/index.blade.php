@@ -21,8 +21,8 @@
             <td>{{$item->nama_kota}}</td>
             <td>{{$item->negara->nama_negara}}</td>
             <td>
-              <a href="/edit" class="btn btn-warning">Edit</a>
-              <a href="/delete" class="btn btn-danger">Hapus</a>
+              <a href="/kota/{{$item->id_kota}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/kota/{{$item->id_kota}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>

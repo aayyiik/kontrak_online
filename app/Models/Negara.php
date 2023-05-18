@@ -11,7 +11,8 @@ class Negara extends Model
     
     protected $table = 'negara';
     protected $primaryKey = 'id_negara';
-
+    public $incrementing = false;
+    
     protected $fillable = [
         'nama_negara'
     ];

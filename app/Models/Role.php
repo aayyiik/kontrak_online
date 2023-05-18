@@ -11,6 +11,7 @@ class Role extends Model
 
     protected $table = 'role';
     protected $primaryKey = 'id_role';
+    public $incrementing = false;
 
     protected $fillable = [
         'nama_role'
