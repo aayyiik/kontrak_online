@@ -9,6 +9,6 @@ class RoleController extends Controller
 {
     public function index(){
         $role = Role::all();
-        return view('dashboard.admin.role', ['role'=>$role]);
+        return view('dashboard.admin.role.index', ['role'=>$role]);
     }
 }

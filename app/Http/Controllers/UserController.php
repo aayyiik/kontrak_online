@@ -13,6 +13,11 @@ class UserController extends Controller
         $user = User::all();
         $role = Role::all();
         $unit = UnitKerja::all();
-        return view('dashboard.admin.user', ['user'=>$user], compact('role','unit'));
+        return view('dashboard.admin.user.index', ['user'=>$user], compact('role','unit'));
+    }
+
+    public function edit($id){
+        $user = User::find($id);
+        return view('dashboard.admin.user.edit', ['user'=>$user]);
     }
 }

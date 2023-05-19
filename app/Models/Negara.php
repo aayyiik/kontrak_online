@@ -14,10 +14,12 @@ class Negara extends Model
     // public $incrementing = false;
     
     protected $fillable = [
+        'id',
+        'kode_negara',
         'nama_negara'
     ];
 
     public function kota(){
-        return $this->hasMany(Kota::class, 'id_kota');
+        return $this->hasMany(Kota::class, 'id');
     }
 }

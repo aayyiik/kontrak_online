@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPekerjaanController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\NegaraController;
+use App\Http\Controllers\RekananController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SignatureController;
 use App\Http\Controllers\StatusController;
@@ -85,3 +86,6 @@ Route::post('/kota/{id_kota}/update', [KotaController::class, 'update']);
 Route::get('/negara', [NegaraController::class, 'index']);
 Route::get('/negara/{id_negara}/edit', [NegaraController::class, 'edit']);
 Route::post('/negara/{id_negara}/update', [NegaraController::class, 'update']);
+
+//Rekanan
+Route::get('/rekanan', [RekananController::class, 'index']);

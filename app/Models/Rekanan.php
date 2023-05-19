@@ -10,10 +10,10 @@ class Rekanan extends Model
     use HasFactory;
     
     protected $table = 'rekanan';
-    protected $primaryKey = 'no_rekanan';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
-        'nama_rekanan', 'alamat', 'no_sap', 'nama_direktur',
+        'id', 'no_rekanan','nama_rekanan', 'alamat', 'no_sap', 'nama_direktur',
         'email_perusahaan', 'status_rekanan'
     ];
 }

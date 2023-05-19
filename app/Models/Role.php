@@ -14,6 +14,8 @@ class Role extends Model
     // public $incrementing = false;
 
     protected $fillable = [
+        'id',
+        'kode_role',
         'nama_role'
     ];
 

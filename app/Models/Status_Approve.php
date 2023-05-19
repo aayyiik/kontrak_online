@@ -13,6 +13,8 @@ class Status_Approve extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
+        'id',
+        'kode_status',
         'nama_status'
     ];
 }

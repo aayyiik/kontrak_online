@@ -20,8 +20,8 @@
             <td>{{$item->id_bagian}}</td>
             <td>{{$item->nama_bagian}}</td>
             <td>
-              <a href="/bagian/{{$item->id_bagian}}/edit" class="btn btn-warning">Edit</a>
-              <a href="/bagian/{{$item->id_bagian}}/delete" class="btn btn-danger">Hapus</a>
+              <a href="/bagian/{{$item->id}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/bagian/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>

@@ -19,8 +19,8 @@
             <td>{{$no++}}</td>
             <td>{{$item->nama_negara}}</td>
             <td>
-              <a href="/negara/{{$item->id_negara}}/edit" class="btn btn-warning">Edit</a>
-              <a href="/negara/{{$item->id_negara}}/delete" class="btn btn-danger">Hapus</a>
+              <a href="/negara/{{$item->id}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/negara/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>
