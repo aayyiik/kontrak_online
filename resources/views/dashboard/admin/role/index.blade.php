@@ -19,8 +19,8 @@
             <td>{{$no++}}</td>
             <td>{{$item->nama_role}}</td>
             <td>
-              <a href="/edit" class="btn btn-warning">Edit</a>
-              <a href="/delete" class="btn btn-danger">Hapus</a>
+              <a href="/role/{{$item->id}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/role/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>

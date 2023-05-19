@@ -14,7 +14,7 @@ class UnitKerja extends Model
     // public $incrementing = false;
 
     protected $fillable = [
-        'id_unit','nama_unit'
+        'id','kode_unit','nama_unit'
     ];
 
     public function user(){

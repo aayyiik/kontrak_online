@@ -14,7 +14,8 @@ class Bagian extends Model
 
 
     protected $fillable = [
-        'id_bagian',
+        'id',
+        'kode_bagian',
         'nama_bagian'
     ];
 }

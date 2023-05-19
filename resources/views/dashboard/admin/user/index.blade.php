@@ -28,8 +28,8 @@
             <td><span class="label {{ ($item->status == 1) ? 'badge rounded-pill bg-primary text-white' : 'badge rounded-pill bg-warning text-white'}}">{{ ($item->status == 1)
               ? 'Aktif' : 'Non-Aktif' }}</span></td>
             <td>
-              <a href="/edit" class="btn btn-warning">Edit</a>
-              <a href="/delete" class="btn btn-danger">Hapus</a>
+              <a href="/status/{{$item->id}}/edit" class="btn btn-warning">Edit</a>
+              <a href="/status/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
         </tbody>

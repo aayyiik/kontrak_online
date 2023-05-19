@@ -14,11 +14,13 @@ class Kota extends Model
     // public $incrementing = false;
     
     protected $fillable = [
+        'id',
+        'kode_kota',
         'nama_kota'
     ];
 
     public function negara(){
-        return $this->belongsTo(Negara::class, 'id_negara');
+        return $this->belongsTo(Negara::class, 'id');
     }
 
 }

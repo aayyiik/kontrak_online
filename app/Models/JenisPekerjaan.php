@@ -14,6 +14,8 @@ class JenisPekerjaan extends Model
     // public $incrementing = false;
 
     protected $fillable = [
+        'id',
+        'kode_jepe',
         'jenis_pekerjaan'
     ];
 }
