@@ -16,19 +16,27 @@
       <div class="form-group">
         <label for="exampleSelectGender">Role</label>
         <select class="form-control" id="exampleSelectGender" name="kode_role">
-          <option>Male</option>
+          <option selected="">--Pilih--</option>
+          @foreach ($role as $item)
+              <option value="{{$item->kode_role}}">{{$item->nama_role}}</option>
+          @endforeach
         </select>
       </div>
       <div class="form-group">
         <label for="exampleSelectGender">Unit</label>
         <select class="form-control" id="exampleSelectGender" name="kode_unit">
-          <option>Male</option>
+          <option selected="">--Pilih--</option>
+          @foreach ($unit as $item)
+              <option value="{{$item->kode_unit}}">{{$item->nama_unit}}</option>
+          @endforeach
         </select>
       </div>
       <div class="form-group">
         <label for="exampleSelectGender">Status</label>
         <select class="form-control" id="exampleSelectGender" name="status">
-          <option>Male</option>
+          <option selected="">--Pilih--</option>
+          <option value="1">Aktif</option>
+          <option value="0">Non-Aktif</option>
         </select>
       </div>
       <button type="submit" class="btn btn-primary mr-2">Submit</button>

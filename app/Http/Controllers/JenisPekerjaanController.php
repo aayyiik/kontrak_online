@@ -12,6 +12,17 @@ class JenisPekerjaanController extends Controller
         return view('dashboard.admin.jenispekerjaan.index', ['jepe'=> $jepe]);
     }
 
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'kode_jepe' => 'required|unique:bagian,kode_jepe',
+            'nama_jepe' => 'required|min:1|max:100',
+        ]);
+
+        JenisPekerjaan::create($request->all());
+        return redirect('/jenispekerjaan');
+    }
+
     public function edit($id_jepe){
         $jepe = JenisPekerjaan::find($id_jepe);
         return view('dashboard.admin.jenispekerjaan.edit', ['jepe'=>$jepe]);

@@ -16,6 +16,20 @@ class UserController extends Controller
         return view('dashboard.admin.user.index', ['user'=>$user], compact('role','unit'));
     }
 
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'nik' => 'required|unique:bagian,nik',
+            'nama' => 'required|min:1|max:100',
+            'kode_role' => 'required',
+            'kode_unit' => 'required',
+            'status' => 'required'
+        ]);
+
+        User::create($request->all());
+        return redirect('/user');
+    }
+
     public function edit($id){
         $user = User::find($id);
         return view('dashboard.admin.user.edit', ['user'=>$user]);

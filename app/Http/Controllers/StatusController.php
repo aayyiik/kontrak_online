@@ -12,6 +12,17 @@ class StatusController extends Controller
         return view('dashboard.admin.status.index', ['status'=>$status]);
     }
 
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'kode_status' => 'required|unique:bagian,kode_status',
+            'nama_status' => 'required|min:1|max:100',
+        ]);
+
+        Status_Approve::create($request->all());
+        return redirect('/status');
+    }
+
     public function edit($id_status){
         $status = Status_Approve::find($id_status);
         return view('dashboard.admin.status.edit', ['status'=>$status]);

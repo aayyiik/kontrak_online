@@ -41,4 +41,11 @@ class BagianController extends Controller
         $bagian->update($request->all());
         return redirect('/bagian');
     }
+
+    public function delete ($id_bagian){
+        $bagian = Bagian::find($id_bagian);
+        $bagian->delete($bagian);
+        return redirect('/bagian');
+    }
+
 }

@@ -51,14 +51,17 @@ Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);
 
 //User
 Route::get('/user', [UserController::class, 'index']);
+Route::post('/user/store', [UserController::class, 'store']);
 
 //UnitKerja
 Route::get('/unitkerja',[UnitKerjaController::class, 'index']);
 Route::get('/unit/{id_unit}/edit', [UnitKerjaController::class, 'edit']);
 Route::post('/unit/{id_unit}/update', [UnitKerjaController::class, 'update']);
+Route::post('/unit/store', [UnitKerjaController::class, 'store']);
 
 //Role
 Route::get('/role', [RoleController::class, 'index']);
+Route::post('/role/store', [RoleController::class, 'store']);
 
 //Bagian
 Route::get('/bagian', [BagianController::class, 'index']);
@@ -66,26 +69,32 @@ Route::get('/bagian/create', [BagianController::class, 'create']);
 Route::post('/bagian/store', [BagianController::class, 'store']);
 Route::get('/bagian/{id_bagian}/edit', [BagianController::class, 'edit']);
 Route::post('/bagian/{id_bagian}/update', [BagianController::class, 'update']);
+Route::get('/bagian/delete', [BagianController::class, 'delete']);
 
 //Status
 Route::get('/status', [StatusController::class, 'index']);
+Route::post('/status/store', [StatusController::class, 'store']);
 Route::get('/status/{id_status}/edit', [StatusController::class, 'edit']);
 Route::post('/status/{id_status}/update', [StatusController::class, 'update']);
 
 //Jenis Pekerjaan
 Route::get('/jenispekerjaan',[JenisPekerjaanController::class, 'index']);
+Route::post('/jenispekerjaan/store', [JenisPekerjaanController::class, 'store']);
 Route::get('/jenispekerjaan/{id_jepe}/edit', [JenisPekerjaanController::class, 'edit']);
 Route::post('/jenispekerjaan/{id_jepe}/update', [JenisPekerjaanController::class, 'update']);
 
 //Kota
 Route::get('/kota', [KotaController::class, 'index']);
+Route::post('/kota/store', [KotaController::class, 'store']);
 Route::get('/kota/{id_kota}/edit', [KotaController::class, 'edit']);
 Route::post('/kota/{id_kota}/update', [KotaController::class, 'update']);
 
 //Negara
 Route::get('/negara', [NegaraController::class, 'index']);
+Route::post('/negara/store', [NegaraController::class, 'store']);
 Route::get('/negara/{id_negara}/edit', [NegaraController::class, 'edit']);
 Route::post('/negara/{id_negara}/update', [NegaraController::class, 'update']);
 
 //Rekanan
 Route::get('/rekanan', [RekananController::class, 'index']);
+Route::post('/rekanan/store', [RekananController::class, 'store']);

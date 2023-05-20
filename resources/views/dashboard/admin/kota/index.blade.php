@@ -16,7 +16,10 @@
       <div class="form-group">
         <label for="exampleSelectGender">Negara</label>
         <select class="form-control" id="exampleSelectGender">
-          <option>Male</option>
+          <option selected="">--Pilih--</option>
+          @foreach ($negara as $item)
+              <option value="{{$item->kode_negara}}">{{$item->nama_negara}}</option>
+          @endforeach
         </select>
       </div>
       <button type="submit" class="btn btn-primary mr-2">Submit</button>
