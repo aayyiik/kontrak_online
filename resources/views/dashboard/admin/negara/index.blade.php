@@ -1,6 +1,25 @@
 @extends('templates.master')
 @section('content')
 <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tambah Negara</h4>
+    <form action="/negara/store" method="POST">
+      @csrf
+      <div class="form-group">
+        <label for="exampleInputText">Kode Negara</label>
+        <input type="text" class="form-control" name="kode_negara" id="exampleInputText1" placeholder="Kode Negara">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Nama Negara</label>
+        <input type="text" class="form-control" name="nama_negara" id="exampleInputText2" placeholder="Nama Negara">
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
+<div class="card">
     <div class="card-body">
       <h4 class="card-title">Data Negara</h4>
       </p>

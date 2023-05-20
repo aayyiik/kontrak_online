@@ -14,6 +14,17 @@ class KotaController extends Controller
         return view('dashboard.admin.kota.index', ['kota'=>$kota], compact('negara'));
     }
 
+    public function store(Request $request)
+    {
+        $this->validate($request, [
+            'kode_kota' => 'required|unique:bagian,kode_kota',
+            'id_negara' => 'required',
+            'nama_kota' => 'required|min:1|max:100',
+        ]);
+
+        Kota::create($request->all());
+        return redirect('/kota');
+    }
 
     public function edit($id_kota){
         $kota = Kota::find($id_kota);
@@ -27,5 +38,10 @@ class KotaController extends Controller
         return redirect('/negara');
     }
 
+    public function delete ($id){
+        $kota = Kota::find($id);
+        $kota->delete($kota);
+        return redirect('/kota');
+    }
     
 }

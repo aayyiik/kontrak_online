@@ -1,8 +1,28 @@
 @extends('templates.master')
 @section('content')
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tambah Jenis Pekerjaan</h4>
+    <form action="/jepe/store" method="POST">
+      @csrf
+      <div class="form-group">
+        <label for="exampleInputText">Kode Jenis Pekerjaan</label>
+        <input type="text" class="form-control" name="kode_jepe" id="exampleInputText1" placeholder="Kode Jenis Pekerjaan">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Jenis Pekerjaan</label>
+        <input type="text" class="form-control" name="nama_jepe" id="exampleInputText2" placeholder="Nama Jenis Pekerjaan">
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
 <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Data Bagian</h4>
+      <h4 class="card-title">Data Jenis Pekerjaan</h4>
       </p>
       <table class="table table-hover">
         <thead>

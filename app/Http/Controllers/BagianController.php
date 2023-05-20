@@ -14,14 +14,15 @@ class BagianController extends Controller
         return view('dashboard.admin.bagian.index', ['bagian' => $bagian]);
     }
 
-    public function create()
-    {
-        return view('dashboard.admin.bagian.create');
-    }
+    // public function create()
+    // {
+    //     return view('dashboard.admin.bagian.create');
+    // }
 
     public function store(Request $request)
     {
         $this->validate($request, [
+            'kode_bagian' => 'required|unique:bagian,kode_bagian',
             'nama_bagian' => 'required|min:1|max:100',
         ]);
 
@@ -29,15 +30,22 @@ class BagianController extends Controller
         return redirect('/bagian');
     }
 
-    public function edit($id_bagian)
+    public function edit($id)
     {
-        $bagian = Bagian::find($id_bagian);
+        $bagian = Bagian::find($id);
         return view('dashboard.admin.bagian.edit', ['bagian' => $bagian]);
     }
 
-    public function update(Request $request, $id_bagian){
-        $bagian = Bagian::find($id_bagian);
+    public function update(Request $request, $id){
+        $bagian = Bagian::find($id);
         $bagian->update($request->all());
         return redirect('/bagian');
     }
+
+    public function delete ($id){
+        $bagian = Bagian::find($id);
+        $bagian->delete($bagian);
+        return redirect('/bagian');
+    }
+
 }
