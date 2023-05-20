@@ -1,6 +1,25 @@
 @extends('templates.master')
 @section('content')
 <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tambah Unit</h4>
+    <form action="/status/store" method="POST">
+      @csrf
+      <div class="form-group">
+        <label for="exampleInputText">Kode Unit</label>
+        <input type="text" class="form-control" name="kode_status" id="exampleInputText1" placeholder="Kode Status">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Bagian</label>
+        <input type="text" class="form-control" name="nama_status" id="exampleInputText2" placeholder="Nama Status">
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
+<div class="card">
     <div class="card-body">
       <h4 class="card-title">Data Unit Kerja</h4>
       </p>

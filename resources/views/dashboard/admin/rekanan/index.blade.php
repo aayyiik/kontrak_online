@@ -1,8 +1,47 @@
 @extends('templates.master')
 @section('content')
 <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tambah Rekanan</h4>
+    <form action="/negara/store" method="POST">
+      @csrf
+      <div class="form-group">
+        <label for="exampleInputText">No Rekanan</label>
+        <input type="text" class="form-control" name="no_rekanan" id="exampleInputText1" placeholder="No Rekanan">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Nama Rekanan</label>
+        <input type="text" class="form-control" name="nama_rekanan" id="exampleInputText2" placeholder="Nama Rekanan">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Alamat</label>
+        <input type="text" class="form-control" name="alamat" id="exampleInputText2" placeholder="Alamat">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">No SAP</label>
+        <input type="text" class="form-control" name="no_sap" id="exampleInputText2" placeholder="No SAP">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Nama Direktur</label>
+        <input type="text" class="form-control" name="nama_direktur" id="exampleInputText2" placeholder="Nama Direktur">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Email Perusahaan</label>
+        <input type="text" class="form-control" name="email_perusahaan" id="exampleInputText2" placeholder="Email Perusahaan">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Status Rekanan</label>
+        <input type="text" class="form-control" name="status_rekanan" id="exampleInputText2" placeholder="Status Rekanan">
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
+<div class="card">
     <div class="card-body">
-      <h4 class="card-title">Data Role</h4>
+      <h4 class="card-title">Data Rekanan</h4>
       </p>
       <table class="table table-hover">
         <thead>

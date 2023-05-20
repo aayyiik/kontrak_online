@@ -1,6 +1,25 @@
 @extends('templates.master')
 @section('content')
 <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tambah Role</h4>
+    <form action="/role/store" method="POST">
+      @csrf
+      <div class="form-group">
+        <label for="exampleInputText">Kode Role</label>
+        <input type="text" class="form-control" name="kode_role" id="exampleInputText1" placeholder="Kode Role">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Nama Role</label>
+        <input type="text" class="form-control" name="nama_role" id="exampleInputText2" placeholder="Nama Role">
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
+<div class="card">
     <div class="card-body">
       <h4 class="card-title">Data Role</h4>
       </p>

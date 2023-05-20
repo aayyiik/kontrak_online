@@ -1,6 +1,43 @@
 @extends('templates.master')
 @section('content')
 <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tambah User</h4>
+    <form action="/user/store" method="POST">
+      @csrf
+      <div class="form-group">
+        <label for="exampleInputText">NIK</label>
+        <input type="text" class="form-control" name="nik" id="exampleInputText1" placeholder="No Rekanan">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputText">Nama</label>
+        <input type="text" class="form-control" name="nama" id="exampleInputText2" placeholder="Nama">
+      </div>
+      <div class="form-group">
+        <label for="exampleSelectGender">Role</label>
+        <select class="form-control" id="exampleSelectGender" name="kode_role">
+          <option>Male</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleSelectGender">Unit</label>
+        <select class="form-control" id="exampleSelectGender" name="kode_unit">
+          <option>Male</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleSelectGender">Status</label>
+        <select class="form-control" id="exampleSelectGender" name="status">
+          <option>Male</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary mr-2">Submit</button>
+    </form>
+  </div>
+</div>
+<br>
+
+<div class="card">
     <div class="card-body">
       <h4 class="card-title">Data User</h4>
       </p>

@@ -14,14 +14,15 @@ class BagianController extends Controller
         return view('dashboard.admin.bagian.index', ['bagian' => $bagian]);
     }
 
-    public function create()
-    {
-        return view('dashboard.admin.bagian.create');
-    }
+    // public function create()
+    // {
+    //     return view('dashboard.admin.bagian.create');
+    // }
 
     public function store(Request $request)
     {
         $this->validate($request, [
+            'kode_bagian' => 'required|unique:bagian,kode_bagian',
             'nama_bagian' => 'required|min:1|max:100',
         ]);
 
