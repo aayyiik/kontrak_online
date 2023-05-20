@@ -34,5 +34,10 @@ class StatusController extends Controller
         return redirect('/status');
     }
 
+    public function delete ($id){
+        $status = Status_Approve::find($id);
+        $status->delete($status);
+        return redirect('/status');
+    }
 
 }

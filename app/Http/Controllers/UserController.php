@@ -34,4 +34,10 @@ class UserController extends Controller
         $user = User::find($id);
         return view('dashboard.admin.user.edit', ['user'=>$user]);
     }
+
+    public function delete ($id){
+        $user = User::find($id);
+        $user->delete($user);
+        return redirect('/user');
+    }
 }

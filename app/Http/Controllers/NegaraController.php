@@ -33,4 +33,11 @@ class NegaraController extends Controller
         $negara->update($request->all());
         return redirect('/negara');
     }
+
+    public function delete ($id){
+        $negara = Negara::find($id);
+        $negara->delete($negara);
+        return redirect('/negara');
+    }
+
 }

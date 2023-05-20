@@ -33,4 +33,10 @@ class JenisPekerjaanController extends Controller
         $jepe->update($request->all());
         return redirect('/jenispekerjaan');
     }
+
+    public function delete ($id){
+        $jepe = JenisPekerjaan::find($id);
+        $jepe->delete($jepe);
+        return redirect('/jenispekerjaan');
+    }
 }

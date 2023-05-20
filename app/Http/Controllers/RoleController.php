@@ -7,9 +7,10 @@ use Illuminate\Http\Request;
 
 class RoleController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $role = Role::all();
-        return view('dashboard.admin.role.index', ['role'=>$role]);
+        return view('dashboard.admin.role.index', ['role' => $role]);
     }
 
     public function store(Request $request)
@@ -20,6 +21,13 @@ class RoleController extends Controller
         ]);
 
         Role::create($request->all());
+        return redirect('/role');
+    }
+
+    public function delete($id)
+    {
+        $role = Role::find($id);
+        $role->delete($role);
         return redirect('/role');
     }
 }

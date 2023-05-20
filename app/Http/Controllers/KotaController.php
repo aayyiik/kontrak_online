@@ -38,5 +38,10 @@ class KotaController extends Controller
         return redirect('/negara');
     }
 
+    public function delete ($id){
+        $kota = Kota::find($id);
+        $kota->delete($kota);
+        return redirect('/kota');
+    }
     
 }

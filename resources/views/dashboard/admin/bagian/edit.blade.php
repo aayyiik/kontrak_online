@@ -4,7 +4,7 @@
     <div class="card-body">
       <h4 class="card-title">FORM EDIT</h4>
       <p class="card-description"> EDIT ...... </p>
-      <form action="/bagian/{{$bagian->id_bagian}}/update" method="POST">
+      <form action="/bagian/{{$bagian->id}}/update" method="POST">
         @csrf
         <div class="form-group">
           <label for="exampleInputText1">Nama Bagian</label>

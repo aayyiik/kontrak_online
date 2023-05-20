@@ -30,20 +30,20 @@ class BagianController extends Controller
         return redirect('/bagian');
     }
 
-    public function edit($id_bagian)
+    public function edit($id)
     {
-        $bagian = Bagian::find($id_bagian);
+        $bagian = Bagian::find($id);
         return view('dashboard.admin.bagian.edit', ['bagian' => $bagian]);
     }
 
-    public function update(Request $request, $id_bagian){
-        $bagian = Bagian::find($id_bagian);
+    public function update(Request $request, $id){
+        $bagian = Bagian::find($id);
         $bagian->update($request->all());
         return redirect('/bagian');
     }
 
-    public function delete ($id_bagian){
-        $bagian = Bagian::find($id_bagian);
+    public function delete ($id){
+        $bagian = Bagian::find($id);
         $bagian->delete($bagian);
         return redirect('/bagian');
     }

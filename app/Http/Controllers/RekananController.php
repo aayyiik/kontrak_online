@@ -29,4 +29,10 @@ class RekananController extends Controller
         Rekanan::create($request->all());
         return redirect('/rekanan');
     }
+
+    public function delete ($id){
+        $rekanan = Rekanan::find($id);
+        $rekanan->delete($rekanan);
+        return redirect('/rekanan');
+    }
 }

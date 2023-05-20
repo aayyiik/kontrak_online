@@ -33,4 +33,10 @@ class UnitKerjaController extends Controller
         $unit->update($request->all());
         return redirect('/unitkerja');
     }
+
+    public function delete ($id){
+        $unit = UnitKerja::find($id);
+        $unit->delete($unit);
+        return redirect('/unit');
+    }
 }
