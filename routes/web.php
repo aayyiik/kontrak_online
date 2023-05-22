@@ -1,6 +1,11 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SignatureController;
+use App\Http\Controllers\TemplateController;
+
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPekerjaanController;
@@ -49,6 +54,7 @@ Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin')
 //Dashboard
 Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);
 
+
 //User
 Route::get('/user', [UserController::class, 'index']);
 Route::post('/user/store', [UserController::class, 'store']);
@@ -94,6 +100,7 @@ Route::get('/kota/{id}/delete', [KotaController::class, 'delete']);
 
 //Negara
 Route::get('/negara', [NegaraController::class, 'index']);
+
 Route::post('/negara/store', [NegaraController::class, 'store']);
 Route::get('/negara/{id}/edit', [NegaraController::class, 'edit']);
 Route::post('/negara/{id}/update', [NegaraController::class, 'update']);
@@ -103,3 +110,4 @@ Route::get('/negara/{id}/delete', [NegaraController::class, 'delete']);
 Route::get('/rekanan', [RekananController::class, 'index']);
 Route::post('/rekanan/store', [RekananController::class, 'store']);
 Route::get('/rekanan/{id}/delete', [RekananController::class, 'delete']);
+
