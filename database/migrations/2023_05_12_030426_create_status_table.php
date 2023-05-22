@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('status', function (Blueprint $table) {
-            $table->integer('id_status')->unique();
+            $table->id();
+            $table->integer('kode_status')->unique();
             $table->string('nama_status');
             $table->timestamps();
             $table->softDeletes();

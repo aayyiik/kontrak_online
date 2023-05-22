@@ -10,9 +10,12 @@ class JenisPekerjaan extends Model
     use HasFactory;
     
     protected $table = 'jenis_pekerjaan';
-    protected $primaryKey = 'id_jepe';
+    protected $primaryKey = 'id';
+    // public $incrementing = false;
 
     protected $fillable = [
+        'id',
+        'kode_jepe',
         'jenis_pekerjaan'
     ];
 }

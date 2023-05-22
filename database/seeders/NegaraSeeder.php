@@ -14,82 +14,82 @@ class NegaraSeeder extends Seeder
     public function run(): void
     {
         Negara::create([
-            'id_negara' => 'AD',
+            'kode_negara' => 'AD',
             'nama_negara' => 'Andorran'
         ]);
 
         Negara::create([
-            'id_negara' => 'AE',
+            'kode_negara' => 'AE',
             'nama_negara' => 'Utd,Arab Emir'
         ]);
 
         Negara::create([
-            'id_negara' => 'AF',
+            'kode_negara' => 'AF',
             'nama_negara' => 'Afganistan'
         ]);
 
         Negara::create([
-            'id_negara' => 'AG',
+            'kode_negara' => 'AG',
             'nama_negara' => 'Antigua/Barbuda'
         ]);
 
         Negara::create([
-            'id_negara' => 'AI',
+            'kode_negara' => 'AI',
             'nama_negara' => 'Anguilla'
         ]);
 
         Negara::create([
-            'id_negara' => 'AL',
+            'kode_negara' => 'AL',
             'nama_negara' => 'Albania'
         ]);
 
          Negara::create([
-            'id_negara' => 'AM',
+            'kode_negara' => 'AM',
             'nama_negara' => 'Armenia'
         ]);
 
         Negara::create([
-            'id_negara' => 'AO',
+            'kode_negara' => 'AO',
             'nama_negara' => 'Angola'
         ]);
 
         Negara::create([
-            'id_negara' => 'AQ',
+            'kode_negara' => 'AQ',
             'nama_negara' => 'Antartica'
         ]);
 
         Negara::create([
-            'id_negara' => 'AR',
+            'kode_negara' => 'AR',
             'nama_negara' => 'Argentina'
         ]);
 
         Negara::create([
-            'id_negara' => 'AS',
+            'kode_negara' => 'AS',
             'nama_negara' => 'Samoa America'
         ]);
 
         Negara::create([
-            'id_negara' => 'AT',
+            'kode_negara' => 'AT',
             'nama_negara' => 'Austria'
         ]);
 
         Negara::create([
-            'id_negara' => 'AU',
+            'kode_negara' => 'AU',
             'nama_negara' => 'Australia'
         ]);
 
         Negara::create([
-            'id_negara' => 'AW',
+            'kode_negara' => 'AW',
             'nama_negara' => 'Aruba'
         ]);
 
         Negara::create([
-            'id_negara' => 'AZ',
+            'kode_negara' => 'AZ',
             'nama_negara' => 'Azerbaijan'
         ]);
 
         Negara::create([
-            'id_negara' => 'ID',
+            'kode_negara' => 'ID',
             'nama_negara' => 'Indonesia'
         ]);
     }

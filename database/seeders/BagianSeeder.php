@@ -14,22 +14,22 @@ class BagianSeeder extends Seeder
     public function run(): void
     {
         Bagian::create([
-            'id_bagian' => 'BG01',
+            'kode_bagian' => 'BG01',
             'nama_bagian'=> 'Jasa Pabrik'
         ]);
 
         Bagian::create([
-            'id_bagian' => 'BG02',
+            'kode_bagian' => 'BG02',
             'nama_bagian'=> 'Jasa Non Pabrik'
         ]);
 
         Bagian::create([
-            'id_bagian' => 'BG03',
+            'kode_bagian' => 'BG03',
             'nama_bagian'=> 'Jasa Distribusi dan Pemasaran'
         ]);
 
         Bagian::create([
-            'id_bagian' => 'BG04',
+            'kode_bagian' => 'BG04',
             'nama_bagian'=> 'Jasa Investasi EPC'
         ]);
     }
