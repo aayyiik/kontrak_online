@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPekerjaanController;
 use App\Http\Controllers\KotaController;
 use App\Http\Controllers\NegaraController;
+use App\Http\Controllers\PenunjukkanController;
 use App\Http\Controllers\RekananController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SignatureController;
@@ -45,9 +46,11 @@ Route::get('/form_ttd',[SignatureController::class,'create']);
 //login
 Route::get('/login', [AuthController::class, 'login']);
 Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin');
+Route::get('/logout', [AuthController::class, 'logout']);
 
 //Dashboard
-Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);
+Route::get('/dashboard-admin',[DashboardController::class, 'dashboard_admin']);
+Route::get('/dashboard-rekanan',[DashboardController::class, 'dashboard_rekanan']);
 
 //User
 Route::get('/user', [UserController::class, 'index']);
@@ -103,3 +106,9 @@ Route::get('/negara/{id}/delete', [NegaraController::class, 'delete']);
 Route::get('/rekanan', [RekananController::class, 'index']);
 Route::post('/rekanan/store', [RekananController::class, 'store']);
 Route::get('/rekanan/{id}/delete', [RekananController::class, 'delete']);
+
+// Rekanan
+// Penunjukkan
+Route::get('/form-penunjukkan', [PenunjukkanController::class, 'create']);
+Route::post('/create-penunjukkan', [PenunjukkanController::class, 'create_penunjukkan']);
+

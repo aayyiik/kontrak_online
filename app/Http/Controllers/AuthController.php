@@ -24,9 +24,9 @@ class AuthController extends Controller
             $user = Auth::user();
 
             if($user->kode_role == 'R008' ){
-                return redirect('/Dashboard_admin');
+                return redirect('/dashboard-admin');
             }elseif($user->kode_role == 'R002'){
-                return redirect ('/Dashboard_rekanan');
+                return redirect ('/dashboard-rekanan');
             }elseif($user->kode_role == 'R003'){
                 return redirect('/Dashboard_hukum');
             }elseif($user->kode_role == 'R004'){
@@ -48,5 +48,12 @@ class AuthController extends Controller
         ->withInput()
         ->withErrors(['login_gagal' => 'These credentials do not match our records.']);
     
-        }
+    }
+
+    public function logout (Request $request){
+        $request->session()->flush();
+        Auth::logout();
+        return redirect('/login');
+
+    }
 }

@@ -1,5 +1,6 @@
 @extends('templates.master')
+
 @section('content')
     
-<h1>Dashboard Rekanan</h1>
+<img src="{{asset('assets/images/logo-sibuc.png')}}" alt="">
 @endsection
