@@ -1,11 +1,6 @@
 <?php
 
 use App\Http\Controllers\AuthController;
-<<<<<<< HEAD
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\SignatureController;
-use App\Http\Controllers\TemplateController;
-=======
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPekerjaanController;
@@ -17,7 +12,6 @@ use App\Http\Controllers\StatusController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UnitKerjaController;
 use App\Http\Controllers\UserController;
->>>>>>> a537976108c998cbf417f0254c7ca4fca4473186
 use Illuminate\Support\Facades\Route;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
@@ -53,8 +47,6 @@ Route::post('/postlogin',[AuthController::class,'postlogin'])->name('postlogin')
 
 //Dashboard
 Route::get('/Dashboard_admin',[DashboardController::class, 'dashboard_admin']);
-<<<<<<< HEAD
-=======
 
 //User
 Route::get('/user', [UserController::class, 'index']);
@@ -79,4 +71,3 @@ Route::get('/kota', [KotaController::class, 'index']);
 
 //Negara
 Route::get('/negara', [NegaraController::class, 'index']);
->>>>>>> a537976108c998cbf417f0254c7ca4fca4473186
