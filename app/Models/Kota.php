@@ -10,14 +10,17 @@ class Kota extends Model
     use HasFactory;
     
     protected $table = 'kota';
-    protected $primaryKey = 'id_kota';
-
+    protected $primaryKey = 'id';
+    // public $incrementing = false;
+    
     protected $fillable = [
+        'id',
+        'kode_kota',
         'nama_kota'
     ];
 
     public function negara(){
-        return $this->belongsTo(Negara::class, 'id_negara');
+        return $this->belongsTo(Negara::class, 'id');
     }
 
 }
