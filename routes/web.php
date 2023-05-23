@@ -2,10 +2,6 @@
 
 use App\Http\Controllers\AuthController;
 
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\SignatureController;
-use App\Http\Controllers\TemplateController;
-
 use App\Http\Controllers\BagianController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\JenisPekerjaanController;
