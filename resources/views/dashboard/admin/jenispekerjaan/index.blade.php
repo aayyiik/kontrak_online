@@ -24,8 +24,7 @@
 <div class="card">
     <div class="card-body">
       <h4 class="card-title">Data Jenis Pekerjaan</h4>
-      </p>
-      <table class="table table-hover">
+      <table id="myTable" class="display" style="width:100%">
         <thead>
           <tr>
             <th>#</th>
@@ -44,9 +43,15 @@
               <a href="/jenispekerjaan/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
-        </tbody>
           @endforeach
+        </tbody>
       </table>
+
+      <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        })
+      </script>
     </div>
   </div>
 @endsection

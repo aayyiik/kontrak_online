@@ -18,7 +18,15 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" />
+    {{-- datatables --}}
+    {{-- <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script> --}}
+
+    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/b-2.3.6/r-2.4.1/sc-2.1.1/sb-1.4.2/sl-1.6.2/datatables.min.css" rel="stylesheet"/>
+ 
   </head>
+
   <body>
     <div class="container-scroller">
 
@@ -50,6 +58,8 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
     <script src="{{asset('assets/vendors/js/vendor.bundle.base.js')}}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
@@ -58,6 +68,14 @@
     <script src="{{asset('assets/js/off-canvas.js')}}"></script>
     <script src="{{asset('assets/js/hoverable-collapse.js')}}"></script>
     <script src="{{asset('assets/js/misc.js')}}"></script>
+    <script>
+     $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+    </script>
+
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/b-2.3.6/r-2.4.1/sc-2.1.1/sb-1.4.2/sl-1.6.2/datatables.min.js"></script>
+
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->

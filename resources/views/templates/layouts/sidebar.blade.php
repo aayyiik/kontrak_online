@@ -10,20 +10,14 @@
       <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
           <span class="icon-bg"><i class="mdi mdi-crosshairs-gps menu-icon"></i></span>
-<<<<<<< HEAD
-          <span class="menu-title">UI Elements</span>
-=======
           <span class="menu-title">Data Master</span>
->>>>>>> a537976108c998cbf417f0254c7ca4fca4473186
           <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="ui-basic">
           <ul class="nav flex-column sub-menu">
-<<<<<<< HEAD
             <li class="nav-item"> <a class="nav-link" href="/form">Form</a></li>
             <li class="nav-item"> <a class="nav-link" href="/form_ttd">Tanda tangan</a></li>
             <li class="nav-item"> <a class="nav-link" href="">Typography</a></li>
-=======
             <li class="nav-item"> <a class="nav-link" href="/user">User</a></li>
             <li class="nav-item"> <a class="nav-link" href="/unitkerja">Unit Kerja</a></li>
             <li class="nav-item"> <a class="nav-link" href="/role">Role</a></li>
@@ -33,12 +27,10 @@
             <li class="nav-item"> <a class="nav-link" href="/jenispekerjaan">Jenis Pekerjaan</a></li>
             <li class="nav-item"> <a class="nav-link" href="/negara">Negara</a></li>
             <li class="nav-item"> <a class="nav-link" href="/kota">Kota</a></li>
->>>>>>> a537976108c998cbf417f0254c7ca4fca4473186
           </ul>
         </div>
       </li>
 
-<<<<<<< HEAD
       <li class="nav-item documentation-link">
         <a class="nav-link" href="http://www.bootstrapdash.com/demo/connect-plus-free/jquery/documentation/documentation.html" target="_blank">
           <span class="icon-bg">
@@ -47,8 +39,6 @@
           <span class="menu-title">Documentation</span>
         </a>
       </li>
-=======
->>>>>>> a537976108c998cbf417f0254c7ca4fca4473186
       <li class="nav-item sidebar-user-actions">
         <div class="user-details">
           <div class="d-flex justify-content-between align-items-center">

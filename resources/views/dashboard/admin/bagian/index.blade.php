@@ -24,7 +24,7 @@
     <div class="card-body">
       <h4 class="card-title">Data Bagian</h4>
       </p>
-      <table class="table table-hover">
+      <table id="myTable" class="display" style="width:100%">
         <thead>
           <tr>
             <th>#</th>
@@ -45,9 +45,9 @@
               <a href="/bagian/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
-        </tbody>
           @endforeach
-      </table>
+        </tbody>
+      </table>  
     </div>
   </div>
 @endsection
