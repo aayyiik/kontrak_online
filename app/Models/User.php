@@ -19,12 +19,14 @@ class User extends Authenticatable
      */
 
      protected $table = 'users';
-     protected $primaryKey = 'nik';
+     protected $primaryKey = 'id';
     
     protected $fillable = [
+        'id',
+        'nik',
         'nama',
-        'id_role',
-        'id_unit',
+        'kode_role',
+        'kode_unit',
         'status',
         'password',
         'remember_token'
@@ -50,10 +52,12 @@ class User extends Authenticatable
     ];
 
     public function role(){
-        return $this->belongsTo(Role::class, 'id_role');
+        return $this->belongsTo(Role::class, 'id');
     }
 
-    public function unit_kerja(){
-        return $this->belongsTo(UnitKerja::class, 'id_unit');
+    public function unit(){
+        return $this->belongsTo(UnitKerja::class, 'id');
     }
+
+   
 }

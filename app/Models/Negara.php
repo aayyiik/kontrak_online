@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Negara extends Model
 {
     use HasFactory;
+    
+    protected $table = 'negara';
+    protected $primaryKey = 'id';
+    // public $incrementing = false;
+    
+    protected $fillable = [
+        'id',
+        'kode_negara',
+        'nama_negara'
+    ];
+
+    public function kota(){
+        return $this->hasMany(Kota::class, 'id');
+    }
 }
