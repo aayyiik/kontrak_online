@@ -1,5 +1,7 @@
 @extends('templates.master')
 @section('content')
+<a href="{{ url()->previous() }}" class="btn btn-warning"><i class=" mdi mdi-arrow-left-bold"></i>Kembali</a>
+<br><br>
 <div class="card">
     <div class="card-body">
       <h4 class="card-title">FORM EDIT</h4>

@@ -1,5 +1,7 @@
 @extends('templates.master')
 @section('content')
+<a href="{{ url()->previous() }}" class="btn btn-warning"><i class=" mdi mdi-arrow-left-bold"></i>Kembali</a>
+<br><br>
 <div class="card">
   <div class="card-body">
     <h4 class="card-title">Tambah Unit</h4>
@@ -23,7 +25,7 @@
     <div class="card-body">
       <h4 class="card-title">Data Unit Kerja</h4>
       </p>
-      <table class="table table-hover">
+      <table id="myTable" class="display" style="width:100%">
         <thead>
           <tr>
             <th>#</th>
@@ -42,8 +44,8 @@
               <a href="/unit/{{$item->id}}/delete" class="btn btn-danger">Hapus</a>
             </td>
           </tr>
-        </tbody>
           @endforeach
+        </tbody>
       </table>
     </div>
   </div>
