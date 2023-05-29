@@ -110,5 +110,5 @@ Route::get('/rekanan/{id}/delete', [RekananController::class, 'delete']);
 // Rekanan
 // Penunjukkan
 Route::get('/form-penunjukkan', [PenunjukkanController::class, 'create']);
-Route::post('/create-penunjukkan', [PenunjukkanController::class, 'create_penunjukkan']);
+Route::post('/store-penunjukkan', [PenunjukkanController::class, 'store_penunjukkan']);
 

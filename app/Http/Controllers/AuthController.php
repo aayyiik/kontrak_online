@@ -28,17 +28,17 @@ class AuthController extends Controller
             }elseif($user->kode_role == 'R002'){
                 return redirect ('/dashboard-rekanan');
             }elseif($user->kode_role == 'R003'){
-                return redirect('/Dashboard_hukum');
+                return redirect('/dashboard-hukum');
             }elseif($user->kode_role == 'R004'){
-                return redirect('/Dashboard_avp');
+                return redirect('/dashboard-avp');
             }elseif($user->kode_role == 'R005'){
                 return redirect('/Dashboard_vp');
             }elseif($user->kode_role == 'R006'){
-                return redirect('Dashboard_svp');
+                return redirect('/dashboard-svp');
             }elseif($user->kode_role == 'R007'){
-                return redirect('Dashboard_dku');
+                return redirect('/dashboard-dku');
             }elseif($user->kode_role == 'R001'){
-                return redirect('Dashboard_buyer');
+                return redirect('/dashboard-buyer');
             }
 
             return redirect()->intended('/');

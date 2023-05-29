@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('no_kontrak')->nullable();
             $table->date('tgl_kontrak');
-            $table->string('sik');
-            $table->string('nib');
+            $table->string('sik')->nullable();
+            $table->string('nib')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

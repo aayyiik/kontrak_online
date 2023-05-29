@@ -13,7 +13,7 @@ class PenunjukkanController extends Controller
         return view('dashboard.rekanan.penunjukkan.create');
     }
 
-    public function create_penunjukkan(Request $request){
+    public function store_penunjukkan(Request $request){
         $request->validate([
             'no_kontrak' => 'required',
             'tgl_kontrak' => 'required',
@@ -22,15 +22,15 @@ class PenunjukkanController extends Controller
         ]);
 
         $sikModel = new Penunjukkan();
-        if($$request->file()){
+        if($request->file()){
             $sikName = time().'_'.$request->file->getClientOriginalName();
             $sikPath = $request->file('sik')->storeAs('uploads', $sikName, 'public');
             $sikModel->sik = '/storage/'.$sikPath;
-            $nibName = time().'_'.$request->file->getClientOriginalName();
-            $nibPath = $request->file('nib')->storeAs('uploads', $nibName, 'public');
-            $nibModel->nib = '/storage/'.$nibPath;
+            // $nibName = time().'_'.$request->file->getClientOriginalName();
+            // $nibPath = $request->file('nib')->storeAs('uploads', $nibName, 'public');
+            // $nibModel->nib = '/storage/'.$nibPath;
             $sikModel->save();
-            $nibModel->save();
+            // $nibModel->save();
 
             return back();
         }
